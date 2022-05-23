@@ -2,7 +2,7 @@ import flask
 import kafka
 
 app = flask.Flask(__name__)
-producer = kafka.KafkaProducer("localhost:9092")
+producer = kafka.KafkaProducer(bootstrap_servers='localhost:9092')
 
 
 @app.post("/foobar")
