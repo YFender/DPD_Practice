@@ -20,4 +20,4 @@ data['people'].append({
     'from': 'Alabama'
 })
 
-requests.post("http://localhost:5050/", json=data)
+requests.post("http://localhost:5050/foobar", json=data)
